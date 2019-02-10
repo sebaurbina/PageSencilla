@@ -11,7 +11,8 @@ body {
 }
 
 .container {
-    width: 1000px;
+    width: 90%;
+    max-width: 1000px;
     margin: 20px auto;
     overflow: hidden;
 }
@@ -53,7 +54,7 @@ header nav ul li a:hover {
 /* Empieza main */
 
 .main {
-    width: 700px;
+    width: 70%;
     background: #fff;
     float: left;
 }
@@ -87,7 +88,7 @@ header nav ul li a:hover {
 
 aside {
     background: #233142;
-    width: 300px;
+    width: 30%;
     color: #161f26;
     padding: 20px;
     color: #fff; 
@@ -131,10 +132,28 @@ aside .widget p {
 /* Empieza Footer */
 
 footer {
-    width: 700px;
+    width: 70%;
     background: #000;
     color: #fff;
     padding: 15px 0;
     text-align: center; 
     clear: both;
+}
+
+/* Termina footer */
+
+/* Empieza los mediaQueries */
+
+@media screen and (max-width: 800px) {
+    .main {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
 }
